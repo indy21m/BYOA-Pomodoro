@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍅 Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="break-overlay" class="break-overlay hidden">
+            <div class="abstract-pattern"></div>
+            <div class="quote-container">
+                <p id="quote-text" class="quote-text"></p>
+                <p class="quote-attribution">Productivity wisdom</p>
+                <div class="break-timer">
+                    <span id="break-minutes">05</span>:<span id="break-seconds">00</span>
+                </div>
+                <button id="skip-break" class="skip-button">Skip Break ⏭️</button>
+            </div>
+        </div>
+        <h1>🍅 Pomodoro Timer</h1>
+        <div class="timer">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        <div class="progress-container">
+            <input type="range" 
+                   id="progress-bar" 
+                   min="0" 
+                   max="1500" 
+                   value="1500" 
+                   class="progress-bar">
+            <div class="progress-labels">
+                <span>0</span>
+                <span>25:00</span>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start">▶️ Start</button>
+            <button id="reset">🔄 Reset</button>
+            <button id="add-time">⏰ +5 Min</button>
+        </div>
+        <div class="mode">
+            <span id="mode-text">💻 Work Time</span>
+        </div>
+        <div class="stats">
+            <span id="pomodoro-count">🎯 Pomodoros: 0</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
