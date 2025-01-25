@@ -17,7 +17,14 @@
                 <div class="break-timer">
                     <span id="break-minutes">05</span>:<span id="break-seconds">00</span>
                 </div>
-                <button id="skip-break" class="skip-button">Skip Break ⏭️</button>
+                <div class="break-controls">
+                    <button id="skip-break" class="skip-button">Skip Break ⏭️</button>
+                    <button id="panda-mode" class="panda-button">🐼 Panda Mode</button>
+                </div>
+            </div>
+            <div id="panda-game" class="panda-game hidden">
+                <canvas id="gameCanvas"></canvas>
+                <button id="close-game" class="close-button">✖️ Close Game</button>
             </div>
         </div>
         <h1>🍅 Pomodoro Timer</h1>
@@ -28,8 +35,6 @@
             <input type="range" 
                    id="progress-bar" 
                    min="0" 
-                   max="1500" 
-                   value="1500" 
                    class="progress-bar">
             <div class="progress-labels">
                 <span>0</span>
